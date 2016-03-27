@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/showTasks"
+        android:title="@string/tasks" />
+
+    <item android:id="@+id/aboutSection"
+        android:title="@string/about" />
+
+    <item android:id="@+id/manageMembers"
+        android:title="@string/manage" />
+
+    <item android:id="@+id/logout"
+        android:title="@string/logout" />
+
+</menu>

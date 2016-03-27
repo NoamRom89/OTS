@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.android.ots">
+    package="com.shenkar.android.ots"
+    android:versionCode="2"
+    android:versionName="2.0001">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:name=".OTS"
+        android:name="com.shenkar.android.ots.OTS"
         android:allowBackup="true"
         android:icon="@mipmap/ots"
         android:label="@string/app_name"
@@ -19,23 +21,23 @@
             android:name="com.parse.CLIENT_KEY"
             android:value="IusSrh1YklCQfjJ9vRxhq3EU4fyouX4ZuOuVUIfs" />
 
-        <activity android:name=".activities.LoginActivity">
+        <activity android:name="com.shenkar.android.ots.activities.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.ots.activities.WaitingTasksActivity">
+        <activity android:name="com.shenkar.android.ots.activities.WaitingTasksActivity">
         </activity>
-        <activity android:name="com.example.android.ots.activities.ReportTaskActivity" >
+        <activity android:name="com.shenkar.android.ots.activities.ReportTaskActivity" >
         </activity>
-        <activity android:name="com.example.android.ots.activities.EditTaskActivity" >
+        <activity android:name="com.shenkar.android.ots.activities.EditTaskActivity" >
          </activity>
-        <activity android:name="com.example.android.ots.activities.CreateTeamActivity" >
+        <activity android:name="com.shenkar.android.ots.activities.CreateTeamActivity" >
         </activity>
-        <activity android:name="com.example.android.ots.activities.AboutActivity" />
-        <activity android:name="com.example.android.ots.activities.ManageTeamActivity"/>
+        <activity android:name="com.shenkar.android.ots.activities.AboutActivity" />
+        <activity android:name="com.shenkar.android.ots.activities.ManageTeamActivity"/>
 
     </application>
 

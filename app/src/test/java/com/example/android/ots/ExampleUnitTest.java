@@ -1,4 +1,4 @@
-package com.example.android.ots;
+package com.shenkar.android.ots;
 
 import org.junit.Test;
 

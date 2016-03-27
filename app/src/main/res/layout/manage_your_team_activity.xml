@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".activities.ManageTeamActivity">
+    <TextView
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/manage_team_text"
+        android:paddingBottom="15dp"
+        android:id="@+id/manage_team"
+        android:textSize="50sp"
+        android:textColor="#ffffff"
+        android:paddingLeft="15dp"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentLeft="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/manage_team"
+        android:background="#ffffff"
+        android:id="@+id/manage_team_layout">
+
+
+        <TextView
+            android:textSize="30dp"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/yourTeamMem"
+            android:id="@+id/team_members"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        <ListView
+            android:layout_margin="10dp"
+            android:layout_below="@+id/team_members"
+            android:id="@+id/list"
+            android:layout_height="300dp"
+            android:layout_width="wrap_content"
+            android:background="#d9d9d9">
+        </ListView>
+
+        <Button
+            android:textColor="#FFFFFF"
+            android:background="@color/colorPrimary"
+            android:layout_below="@+id/list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add"
+            android:id="@+id/add_team_members_button"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>
