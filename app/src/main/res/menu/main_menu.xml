@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/showTasks"
+        android:title="@string/tasks"
+        android:icon="@drawable/tasks_icon" />
+
+    <item android:id="@+id/aboutSection"
+        android:title="@string/about"
+        android:icon="@drawable/white_info_icon" />
+
+    <item android:id="@+id/manageMembers"
+        android:title="@string/manage"
+        android:icon="@drawable/manage_icon" />
+
+    <item android:id="@+id/logout"
+        android:title="@string/logout" />
+
+</menu>

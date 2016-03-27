@@ -1,0 +1,148 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".activities.CreateTeamActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Create your team - member #"
+        android:paddingBottom="50dp"
+        android:layout_marginRight="21dp"
+        android:id="@+id/makeTeam"
+        android:layout_alignRight="@+id/member_num"
+        android:layout_alignEnd="@+id/member_num" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="1"
+        android:id="@+id/member_num"
+        android:layout_alignTop="@+id/makeTeam"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="38dp"
+        android:layout_marginEnd="38dp">
+    </TextView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Team name"
+        android:id="@+id/teamNameLable"
+        android:layout_alignBottom="@+id/makeTeam"
+        android:layout_alignRight="@+id/plus_button"
+        android:layout_alignEnd="@+id/plus_button" />
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:id="@+id/teamNameVal"
+        android:layout_below="@+id/teamNameLable"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Member name"
+        android:id="@+id/memberNameLable"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/teamNameVal"
+        android:layout_alignRight="@+id/teamNameLable"
+        android:layout_alignEnd="@+id/teamNameLable" />
+
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:background="#ffffff"
+        android:ems="10"
+        android:id="@+id/memberNameVal"
+        android:layout_below="@+id/memberNameLable"
+        android:layout_alignLeft="@+id/teamNameVal"
+        android:layout_alignStart="@+id/teamNameVal"
+        android:layout_alignRight="@+id/teamNameVal"
+        android:layout_alignEnd="@+id/teamNameVal" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Member e-mail"
+        android:id="@+id/memberMailLable"
+        android:layout_below="@+id/memberNameVal"
+        android:layout_alignLeft="@+id/memberNameLable"
+        android:layout_alignStart="@+id/memberNameLable"
+        android:layout_marginTop="34dp" />
+
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:background="#ffffff"
+        android:id="@+id/member_phone_input"
+        android:layout_below="@+id/textView6"
+        android:layout_alignLeft="@+id/member_mail_input"
+        android:layout_alignStart="@+id/member_mail_input"
+        android:layout_alignRight="@+id/member_mail_input"
+        android:layout_alignEnd="@+id/member_mail_input" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Member phone"
+        android:id="@+id/textView6"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/member_mail_input"
+        android:layout_alignLeft="@+id/memberMailLable"
+        android:layout_alignStart="@+id/memberMailLable" />
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/member_mail_input"
+        android:background="#ffffff"
+        android:layout_below="@+id/memberMailLable"
+        android:layout_alignLeft="@+id/memberNameVal"
+        android:layout_alignStart="@+id/memberNameVal"
+        android:layout_alignRight="@+id/memberNameVal"
+        android:layout_alignEnd="@+id/memberNameVal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/plus_button"
+        android:text="Add member"
+        android:layout_above="@+id/send_button"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Send invitation"
+        android:id="@+id/send_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000" />
+
+</RelativeLayout>
