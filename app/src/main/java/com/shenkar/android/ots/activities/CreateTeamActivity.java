@@ -91,7 +91,8 @@ public class CreateTeamActivity extends Toolbar {
         i.putExtra(Intent.EXTRA_EMAIL  , new String[]{mails});
         i.putExtra(Intent.EXTRA_SUBJECT, "Invitation to Join OTS team");
         i.putExtra(Intent.EXTRA_TEXT, "Hi, You have been invited to be a team member in an OTS Team created by me.\n" +
-                "Use this link to download and install the App from Google Play");
+                "Use this link to download and install the App from Google Play: (don't forget to use your phone number as password)\n\n" +
+        "https://play.google.com/store/apps/details?id=com.shenkar.android.ots");
         try {
             startActivity(Intent.createChooser(i, "Send mail"));
         } catch (android.content.ActivityNotFoundException ex) {
